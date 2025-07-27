@@ -1,8 +1,10 @@
+[TOC]
+
+
+
 # 一级标题
 
 ## 二级标题
-
-
 
 wefje
 
@@ -10,7 +12,7 @@ wekfjew
 
 ---
 
-***
+### fejlwjef
 
 **粗体**
 
@@ -47,7 +49,6 @@ H~2~O
 ```python
 wefwejflflwef `int a=0;`wefef
 ```
-
 
 
 www.baidu.com
@@ -240,5 +241,71 @@ zenuml
     Alice->Bob: Hi Bob
     Bob->Alice: Hi Alice
 
+```
+
+
+***
+
+
+```mermaid
+graph TD
+    A[矩形] --> B(圆角矩形)
+    B --> C((圆形))
+    C --> D{菱形}
+    D --> E{{六边形}}
+    E --> F[/平行四边形/]
+    F --> G[\反向平行四边形\]
+    G --> H>梯形]
+```
+
+
+
+```mermaid
+
+graph TD
+    A([开始]) --> B[初始化队列: 加入起点]
+    B --> C[初始化已访问集合]
+    C --> D{队列是否为空?}
+    D -->|是| E([搜索失败: 无解])
+    D -->|否| F[取出队首节点]
+    F --> G{该节点是否为目标?}
+    G -->|是| H([返回路径])
+    G -->|否| I[获取节点的所有邻居]
+    I --> J[过滤已访问的邻居]
+    J --> K[将新邻居加入队列并标记为已访问]
+    K --> D
+
+```
+
+```mermaid
+gantt
+    title 项目开发计划
+    dateFormat  YYYY-MM-DD
+    section 需求
+    分析需求          :done,    des1, 2025-08-01, 3d
+    section 开发
+    编码              :active,  des2, 2025-08-04, 5d
+    测试              :         des3, after des2, 3d
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> 待机
+    待机 --> 工作 : 开机
+    工作 --> 待机 : 关机
+```
+
+```mermaid
+pie title 饮料偏好
+    "咖啡" : 40
+    "茶" : 30
+    "水" : 30
+```
+
+```mermaid
+erDiagram
+    "用户" ||--o{ "订单" : "拥有"
+    "订单" ||--|{ "订单项" : "包含"
+    "产品" ||--o{ "订单项" : "被包含"
 ```
 
