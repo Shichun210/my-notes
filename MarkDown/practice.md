@@ -4,6 +4,8 @@
 
 # 一级标题
 
+> 而非理解为
+
 ## 二级标题
 
 wefje
@@ -24,13 +26,43 @@ wekfjew
 
 ==高亮==
 
+> [!attention]
+
 x^2^
 
 H~2~O
 
+> fef
+
+### 三级标题
+
+> wefwef
+
+<blockquote alt = 'purple'>wefwelfjwekfjweflkjs
+wlekfjewfkw
+welfjwlekfjwe</blockquote>
+
+
+
+### 又一个三级标题
+
+
+
+####  四级标题
+
+
+
+##### 五级标题
+
+> 访问附件二
+
 - [ ] lunch
 
 - [ ] wfjwjfjj
+
+## 又一个二级标题
+
+
 
 >
 >
@@ -55,7 +87,35 @@ www.baidu.com
 
 [baidu](https://www.baidu.com)
 
+[baidu](www.baidu.com)
 
+> [!note]
+>
+> fefefewkf
+
+
+
+> [!tip]
+>
+> lfwekfldjwfel
+
+> [!warning]
+
+
+
+> [!caution]
+
+
+
+> [!important]
+
+<span style="background:#0078d7; color:white; padding:3px 8px; border-radius:12px;">Python</span>
+<span style="background:#28a745; color:white; padding:3px 8px; border-radius:12px;">AI</span>
+<span style="background:#ff9800; color:white; padding:3px 8px; border-radius:12px;">Note</span>
+
+```
+<section alt="note">note text</section><br>
+```
 
 | efw  | fwf  | ffw  |
 | ---- | ---- | ---- |
@@ -308,4 +368,45 @@ erDiagram
     "订单" ||--|{ "订单项" : "包含"
     "产品" ||--o{ "订单项" : "被包含"
 ```
+
+
+
+
+
+```mermaid
+flowchart TD
+  A[Input: cell and count] --> B[Mark cell as moved and safe]
+  B --> C[Construct new sentence for neighbors]
+  C --> D["Add sentence to knowledge base (KB)"]
+  D --> E{"Any inference possible?"}
+  E -->|Yes| F[Infer new safe/mine cells and update KB]
+  F --> D
+  E -->|No| G[KB converged, exit loop]
+```
+
+```mermaid
+%%{init: {"theme": "default"}}%%
+radar-beta
+  title Skills Comparison
+  axis py["Python"], math["Math"], ai["AI"], comm["Communication"], team["Teamwork"]
+  curve alice["Alice"]{80, 70, 90, 60, 75}
+  curve bob["Bob"]{65, 85, 80, 70, 90}
+  showLegend true
+  max 100
+  min 0
+  graticule polygon
+  ticks 5
+```
+
+```mermaid
+%%{init: {"theme": "default"}}%%
+treemap-beta
+  "AI Project"
+    "Data Preparation": 30
+    "Model Training": 40
+    "Evaluation": 20
+    "Deployment": 10
+```
+
+
 
