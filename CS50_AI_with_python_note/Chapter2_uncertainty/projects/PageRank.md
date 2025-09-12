@@ -105,11 +105,11 @@ $$
 
 ```mermaid
 flowchart TD
-    A[开始: 初始化 pageRank = 1 / N] --> B[循环更新每个页面的PageRank]
-    B --> C["计算新 PageRank: PR(p) = (1-d)/N + d * sum(PR(q)/L(q))"]
-    C --> D{"收敛了吗? abs(newRank - pageRank) < delta ?"}
-    D -- 是 --> E[返回 newRank]
-    D -- 否 --> F[pageRank = newRank]
+    A["Initialize PageRank = 1 / N"] --> B["Iteratively update each page's PageRank"]
+    B --> C["Compute new PR: PR(p) = (1-d)/N + d * sum(PR(q)/L(q))"]
+    C --> D{"Converged?"}
+    D -- "Yes, abs(newRank - pageRank) < delta" --> E["Return newRank"]
+    D -- "No" --> F["pageRank = newRank"]
     F --> B
 ```
 
